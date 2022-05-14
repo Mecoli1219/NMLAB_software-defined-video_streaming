@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service Control {
+    rpc Control(ControlRequest) returns (ControlResponse);
+}
+
+message ControlRequest {
+    bool ObjectDetection = 1;
+    bool HandPoseTracking = 2;
+    bool PoseEstimation = 3;
+}
+
+message ControlResponse {
+    bool success = 1;
+}
