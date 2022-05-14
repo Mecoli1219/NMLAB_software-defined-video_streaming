@@ -1,3 +1,8 @@
+## Build grpc
+```
+make
+```
+
 ## Run server
 ```
 python main.py
